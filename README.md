@@ -26,11 +26,12 @@ end
 ```
 
 もちろんwith_indexとかも使えます。<br>
+それとeach_with_animationでも使えます。長いので非推奨。<br>
 also, if you watn to use "with_index"
 
 ```ruby
 list = %w(hage hoge foo) * 1000
-list.each_with_anim.with_index do |elem,i|
+list.each_with_animation.with_index do |elem,i|
   #something
 end
 ```
