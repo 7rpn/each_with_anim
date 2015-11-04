@@ -45,7 +45,7 @@ list.each_with_anim(1) do |elem|
   #something
 end
 ```
-![change_anim](:/anim_change.gif)
+![change_anim](:https://github.com/7rpn/each_with_anim/blob/master/anim_change.gif)
 
 
 ## Problem
