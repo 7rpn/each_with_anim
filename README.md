@@ -1,6 +1,6 @@
 # each_with_anim
 
-RubyのCUI上でループ時のアニメーションを簡単に作れるメソッドです。<br>
+RubyのCUI上でループ時のアニメーションが簡単に作れるメソッドです。<br>
 ループが終了する予測時間も測定してくれます。
 
 Each_with_anim is **easiest to make** progress bar and other **cool animations** in CUI.
@@ -26,8 +26,8 @@ end
 ```
 
 もちろんwith_indexとかも使えます。<br>
-それとeach_with_animationでも使えます。長いので非推奨。<br>
-also, if you watn to use "with_index"
+あとeach_with_animationはeach_with_animのエイリアスになってます。長いので非推奨。<br>
+also, if you want to use "with_index"
 
 ```ruby
 list = %w(hage hoge foo) * 1000
@@ -36,7 +36,8 @@ list.each_with_animation.with_index do |elem,i|
 end
 ```
 
-同様に，引数を取ってアニメーションを変えることができます。今はまだ2つだけ。
+同様に，引数を取ってアニメーションを変えることができます。今はまだ2つだけ。<br>
+if you want to change animation,
 
 ```ruby
 list = %w(hage hoge foo) * 1000
@@ -63,7 +64,8 @@ end
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/7rpn/each_with_anim. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
-なんでもok
+なんでもok<br>
+すごい顔文字師がいたら助けてください笑
 
 ## License
 
