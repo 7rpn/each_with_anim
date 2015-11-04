@@ -27,7 +27,7 @@ end
 
 もちろんwith_indexとかも使えます。<br>
 あとeach_with_animationはeach_with_animのエイリアスになってます。長いので非推奨。<br>
-also, if you want to use "with_index"
+also, if you want to use "with_index",
 
 ```ruby
 list = %w(hage hoge foo) * 1000
