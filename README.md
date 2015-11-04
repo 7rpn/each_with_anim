@@ -6,7 +6,7 @@ RubyのCUI上で，クールなアニメーションを表示できます。<br>
 
 Each_with_anim is **easiest to make** progress bar and other **cool animations** in CUI.
 
-![anim](:http://cdn-ak.f.st-hatena.com/images/fotolife/s/s7rpn/20151104/20151104115536.gif)
+![anim](:https://github.com/7rpn/each_with_anim/blob/master/anim.gif?raw=true)
 
 ## Installation
 
@@ -45,7 +45,7 @@ list.each_with_anim(1) do |elem|
   #something
 end
 ```
-![change_anim](:http://f.st-hatena.com/images/fotolife/s/s7rpn/20151104/20151104115535.gif)
+![change_anim](:https://github.com/7rpn/each_with_anim/blob/master/anim_change.gif?raw=true)
 
 
 ## Problem
