@@ -14,7 +14,7 @@ Each_with_anim is **easiest to make** progress bar and other **cool animations**
 
 ## Usage
 
-each_with_animはeachと同じように使えます。<br>
+each_with_animはeachと同じ振る舞いをします。そこにアニメーションが追加されます。<br>
 Use "each_with_anim" like "each" method.
 
 ```ruby
