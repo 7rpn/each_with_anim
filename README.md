@@ -1,4 +1,4 @@
-# EachWithAnim
+# each_with_anim
 
 RubyのCUI上でループ時のアニメーションを簡単に作れるメソッドです。<br>
 ループが終了する予測時間も測定してくれます。
@@ -19,7 +19,7 @@ Use "each_with_anim" like "each" method.
 ```ruby
 require "each_with_anim"
 
-list = %w(hage hoge foo)
+list = %w(hage hoge foo) * 1000
 list.each_with_anim do |elem|
   #something
 end
@@ -29,17 +29,16 @@ end
 also, if you watn to use "with_index"
 
 ```ruby
-list = %w(hage hoge foo)
+list = %w(hage hoge foo) * 1000
 list.each_with_anim.with_index do |elem,i|
   #something
 end
 ```
 
-同様に，引数を取ってアニメーションを変えることができます。今後増やして行く予定。<br>
-when you want to change animation,
+同様に，引数を取ってアニメーションを変えることができます。いまはまだ一つしか作ってないですが。
 
 ```ruby
-list = %w(hage hoge foo)
+list = %w(hage hoge foo) * 1000
 list.each_with_anim(1) do |elem|
   #something
 end
@@ -53,7 +52,7 @@ each_with_anim内でprintすると表示がバグります。<br>
 解決策を絶賛探し中。
 
 ```ruby
-list = %w(hage hoge foo)
+list = %w(hage hoge foo) * 1000
 list.each_with_anim do |elem|
     puts "piyoo"
 end
