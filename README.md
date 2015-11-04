@@ -1,12 +1,11 @@
 # EachWithAnim
 
-プログレスバーを簡単に。<br>
-RubyのCUI上で，クールなアニメーションを表示できます。<br>
+RubyのCUI上でループ時のアニメーションを簡単に作れるメソッドです。<br>
 ループが終了する予測時間も測定してくれます。
 
 Each_with_anim is **easiest to make** progress bar and other **cool animations** in CUI.
 
-![anim](https://github.com/7rpn/each_with_anim/raw/master/change_anim.gif)
+![anim](https://github.com/7rpn/each_with_anim/raw/master/anim_change.gif)
 
 ## Installation
 
@@ -14,7 +13,7 @@ Each_with_anim is **easiest to make** progress bar and other **cool animations**
 
 ## Usage
 
-each_with_animはeachと同じ振る舞いをします。そこにアニメーションが追加されます。<br>
+each_with_animは，アニメーションを表示する以外は基本的にeachと同じ振る舞いをします。<br>
 Use "each_with_anim" like "each" method.
 
 ```ruby
