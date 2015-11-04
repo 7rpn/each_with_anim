@@ -1,41 +1,73 @@
 # EachWithAnim
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/each_with_anim`. To experiment with that code, run `bin/console` for an interactive prompt.
+プログレスバーを簡単に。<br>
+RubyのCUI上で，クールなアニメーションを表示できます。<br>
+ループが終了する予測時間も測定してくれます。
 
-TODO: Delete this and the text above, and describe your gem
+Each_with_anim is **easiest to make** progress bar and other **cool animations** in CUI.
+
+![anim](:http://cdn-ak.f.st-hatena.com/images/fotolife/s/s7rpn/20151104/20151104115536.gif)
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'each_with_anim'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
 
     $ gem install each_with_anim
 
 ## Usage
 
-TODO: Write usage instructions here
+each_with_animはeachと同じように使えます。<br>
+Use "each_with_anim" like "each" method.
 
-## Development
+```ruby
+require "each_with_anim"
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+list = %w(hage hoge foo)
+list.each_with_anim do |elem|
+  #something
+end
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+同時にwith_indexを使いたい時は以下の通り。<br>
+also, if you watn to use "with_index"
+
+```ruby
+list = %w(hage hoge foo)
+list.each_with_anim.with_index do |elem,i|
+  #something
+end
+```
+
+同様に，引数を取ってアニメーションを変えることができます。今後増やして行く予定。<br>
+when you want to change animation,
+
+```ruby
+list = %w(hage hoge foo)
+list.each_with_anim(1) do |elem|
+  #something
+end
+```
+![change_anim](:http://f.st-hatena.com/images/fotolife/s/s7rpn/20151104/20151104115535.gif)
+
+
+## Problem
+
+each_with_anim内でprintすると表示がバグります。<br>
+解決策を絶賛探し中。
+
+```ruby
+list = %w(hage hoge foo)
+list.each_with_anim do |elem|
+    puts "piyoo"
+end
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/each_with_anim. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/7rpn/each_with_anim. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
+なんでもok
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
+自由に使ってください。
