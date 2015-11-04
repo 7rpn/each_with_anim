@@ -25,7 +25,7 @@ list.each_with_anim do |elem|
 end
 ```
 
-同時にwith_indexを使いたい時は以下の通り。<br>
+もちろんwith_indexとかも使えます。<br>
 also, if you watn to use "with_index"
 
 ```ruby
@@ -35,7 +35,7 @@ list.each_with_anim.with_index do |elem,i|
 end
 ```
 
-同様に，引数を取ってアニメーションを変えることができます。いまはまだ一つしか作ってないですが。
+同様に，引数を取ってアニメーションを変えることができます。今はまだ2つだけ。
 
 ```ruby
 list = %w(hage hoge foo) * 1000
@@ -52,7 +52,7 @@ each_with_anim内でprintすると表示がバグります。<br>
 解決策を絶賛探し中。
 
 ```ruby
-list = %w(hage hoge foo) * 1000
+list = %w(hage hoge foo) * 10
 list.each_with_anim do |elem|
     puts "piyoo"
 end
