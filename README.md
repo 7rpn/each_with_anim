@@ -26,7 +26,7 @@ end
 ```
 
 もちろんwith_indexとかも使えます。<br>
-あとeach_with_animationはeach_with_animのエイリアスになってます。長いので非推奨。<br>
+あとeach_with_animationはeach_with_animのエイリアスになってます。ただ長いので非推奨。<br>
 also, if you want to use "with_index",
 
 ```ruby
@@ -37,6 +37,7 @@ end
 ```
 
 同様に，引数を取ってアニメーションを変えることができます。今はまだ2つだけ。<br>
+暇なときに増やして行きます。<br>
 if you want to change animation,
 
 ```ruby
