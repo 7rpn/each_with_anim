@@ -7,17 +7,17 @@ Gem::Specification.new do |spec|
   spec.name          = "each_with_anim"
   spec.version       = EachWithAnim::VERSION
   spec.authors       = ["7rpn"]
-  spec.email         = ["7zip.deadlock@gmail.com"]
+  spec.email         = ["7rpn.deadlock@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Each_with_anim is easiest to make progress bar and other cool animations in CUI.}
+  spec.description   = %q{}
+  spec.homepage      = ""
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata['allowed_push_host'] = "https://github.com/7rpn/each_with_anim.gi"
   else
     raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
