@@ -3,7 +3,6 @@ require "each_with_anim/version"
 module Enumerable
 	def each_with_anim(kind=0)
 		return enum_for(__method__) unless block_given?
-		puts
 		array_size = self.length
 		@start_time, @before_size  = Time.now, 0 
 		self.each_with_index do |elem,i|
